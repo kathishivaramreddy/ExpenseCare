@@ -8,6 +8,9 @@
 
 import UIKit
 
+import Firebase
+import GoogleSignIn
+
 class ViewController: UIViewController {
     
     
@@ -18,6 +21,11 @@ class ViewController: UIViewController {
         
     }
 
-
+    @IBAction func signInButtonTapped(_ sender: Any) {
+        
+        GIDSignIn.sharedInstance()?.presentingViewController = self
+        GIDSignIn.sharedInstance().signIn()
+    }
+    
 }
 

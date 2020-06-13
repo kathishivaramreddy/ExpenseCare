@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		F79A80E724954E3600B16EC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F79A80E624954E3600B16EC8 /* Assets.xcassets */; };
 		F79A80EA24954E3600B16EC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F79A80E824954E3600B16EC8 /* LaunchScreen.storyboard */; };
 		F79A80F524954E3600B16EC8 /* ExpenseCareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79A80F424954E3600B16EC8 /* ExpenseCareTests.swift */; };
+		F79A810024955A0300B16EC8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F79A80FF24955A0300B16EC8 /* GoogleService-Info.plist */; };
 		FDF562BF85D10D0671FA2773 /* Pods_ExpenseCareTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CBC14712F2B2546698D50DB /* Pods_ExpenseCareTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		F79A80F024954E3600B16EC8 /* ExpenseCareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpenseCareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F79A80F424954E3600B16EC8 /* ExpenseCareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCareTests.swift; sourceTree = "<group>"; };
 		F79A80F624954E3600B16EC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F79A80FF24955A0300B16EC8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +89,6 @@
 				1376A1A343E4A77541159E26 /* Pods-ExpenseCareTests.debug.xcconfig */,
 				51BF1D691E356E2095B927F4 /* Pods-ExpenseCareTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -122,6 +123,7 @@
 				F79A80E824954E3600B16EC8 /* LaunchScreen.storyboard */,
 				F79A80EB24954E3600B16EC8 /* Info.plist */,
 				F79A80E324954E3300B16EC8 /* ExpenseCare.xcdatamodeld */,
+				F79A80FF24955A0300B16EC8 /* GoogleService-Info.plist */,
 			);
 			path = ExpenseCare;
 			sourceTree = "<group>";
@@ -221,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F79A80EA24954E3600B16EC8 /* LaunchScreen.storyboard in Resources */,
+				F79A810024955A0300B16EC8 /* GoogleService-Info.plist in Resources */,
 				F79A80E724954E3600B16EC8 /* Assets.xcassets in Resources */,
 				F79A80E224954E3300B16EC8 /* Main.storyboard in Resources */,
 			);
