@@ -44,7 +44,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+            <point key="canvasLocation" x="-1516" y="-952"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="RcB-R3-KO1">
@@ -60,41 +60,157 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lXb-c2-W0I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1946" y="451"/>
+            <point key="canvasLocation" x="967" y="295"/>
         </scene>
-        <!--Item 1-->
+        <!--Expense Home View Controller-->
         <scene sceneID="XNO-pC-ymx">
             <objects>
-                <viewController id="X8o-1p-tQu" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ExpenseHomeViewController" id="X8o-1p-tQu" customClass="ExpenseHomeViewController" customModule="ExpenseCare" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pj4-47-x0W">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="lgu-zk-52X"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="99K-F5-pBM"/>
+                    <navigationItem key="navigationItem" id="dyT-dk-cz9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bjg-Ii-Lqd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1946" y="-198"/>
+            <point key="canvasLocation" x="1886" y="-427"/>
+        </scene>
+        <!--Wallet View Controller-->
+        <scene sceneID="iLh-Bo-sfJ">
+            <objects>
+                <viewController storyboardIdentifier="WalletViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="hCF-er-Ggs" customClass="WalletViewController" customModule="ExpenseCare" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CrW-NE-2YD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RxH-so-Ofm">
+                                <rect key="frame" x="20" y="75" width="374" height="198"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Wallet" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMH-ff-Mxm">
+                                        <rect key="frame" x="8" y="8" width="103" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="1Sy-rN-h6t"/>
+                                            <constraint firstAttribute="width" constant="103" id="BwI-8c-4WC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Wallet Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Y5-S1-4Pd">
+                                        <rect key="frame" x="8" y="40" width="358" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="Csr-bS-FRH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oep-kL-UXJ">
+                                        <rect key="frame" x="8" y="82" width="71" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="71" id="983-sz-oqP"/>
+                                            <constraint firstAttribute="height" constant="18" id="HFe-q2-z52"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="WtH-Mq-inJ">
+                                        <rect key="frame" x="32" y="108" width="130" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="QvY-i2-VPE"/>
+                                            <constraint firstAttribute="width" constant="130" id="fxj-eM-mOz"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="Personal"/>
+                                            <segment title="Business"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPF-mn-FCm">
+                                        <rect key="frame" x="8" y="154" width="358" height="36"/>
+                                        <color key="backgroundColor" red="0.78656284609421867" green="0.44219998824410389" blue="0.37764528827212501" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="R70-S4-6dY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Save">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="198" id="1rs-3X-pXB"/>
+                                    <constraint firstItem="8Y5-S1-4Pd" firstAttribute="leading" secondItem="RxH-so-Ofm" secondAttribute="leading" constant="8" id="4ek-Gk-9gQ"/>
+                                    <constraint firstItem="WtH-Mq-inJ" firstAttribute="top" secondItem="oep-kL-UXJ" secondAttribute="bottom" constant="8" id="Czq-hh-iq8"/>
+                                    <constraint firstItem="oep-kL-UXJ" firstAttribute="leading" secondItem="RxH-so-Ofm" secondAttribute="leading" constant="8" id="Di2-ee-cDc"/>
+                                    <constraint firstItem="WtH-Mq-inJ" firstAttribute="leading" secondItem="RxH-so-Ofm" secondAttribute="leading" constant="32" id="FdB-2I-kGU"/>
+                                    <constraint firstItem="wPF-mn-FCm" firstAttribute="leading" secondItem="RxH-so-Ofm" secondAttribute="leading" constant="8" id="Iaf-VR-K9t"/>
+                                    <constraint firstAttribute="trailing" secondItem="wPF-mn-FCm" secondAttribute="trailing" constant="8" id="NyL-gB-xgU"/>
+                                    <constraint firstAttribute="bottom" secondItem="wPF-mn-FCm" secondAttribute="bottom" constant="8" id="PZy-sf-hFR"/>
+                                    <constraint firstItem="eMH-ff-Mxm" firstAttribute="top" secondItem="RxH-so-Ofm" secondAttribute="top" constant="8" id="QbN-hb-yIS"/>
+                                    <constraint firstItem="eMH-ff-Mxm" firstAttribute="leading" secondItem="RxH-so-Ofm" secondAttribute="leading" constant="8" id="XcQ-uJ-cjd"/>
+                                    <constraint firstAttribute="trailing" secondItem="8Y5-S1-4Pd" secondAttribute="trailing" constant="8" id="atd-FJ-d72"/>
+                                    <constraint firstItem="oep-kL-UXJ" firstAttribute="top" secondItem="8Y5-S1-4Pd" secondAttribute="bottom" constant="8" id="de7-Mn-rKP"/>
+                                    <constraint firstItem="8Y5-S1-4Pd" firstAttribute="top" secondItem="eMH-ff-Mxm" secondAttribute="bottom" constant="8" id="ud2-g8-JDC"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.24925085616438356" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="RxH-so-Ofm" firstAttribute="leading" secondItem="Had-Pp-2KT" secondAttribute="leading" constant="20" id="Aoh-AJ-LIo"/>
+                            <constraint firstItem="RxH-so-Ofm" firstAttribute="top" secondItem="Had-Pp-2KT" secondAttribute="top" constant="31" id="In4-bI-N1S"/>
+                            <constraint firstItem="RxH-so-Ofm" firstAttribute="trailing" secondItem="Had-Pp-2KT" secondAttribute="trailing" constant="-20" id="zWK-D7-ZoT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Had-Pp-2KT"/>
+                    </view>
+                    <connections>
+                        <outlet property="walletView" destination="RxH-so-Ofm" id="ji7-dD-HVg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RfN-lt-YMq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2721.739130434783" y="-445.3125"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="WQ6-VB-w6P">
             <objects>
-                <tabBarController storyboardIdentifier="HomeViewController" id="Wbl-Es-JXY" customClass="HomeViewController" customModule="ExpenseCare" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="HomeViewController" modalPresentationStyle="fullScreen" id="Wbl-Es-JXY" customClass="HomeViewController" customModule="ExpenseCare" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iYf-FZ-6aA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="X8o-1p-tQu" kind="relationship" relationship="viewControllers" id="RF9-fI-B4H"/>
+                        <segue destination="5Z8-Bh-ULR" kind="relationship" relationship="viewControllers" id="RF9-fI-B4H"/>
                         <segue destination="Oep-1O-akm" kind="relationship" relationship="viewControllers" id="RWc-to-Eqf"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q79-ZX-ZTy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1025" y="138"/>
+            <point key="canvasLocation" x="162" y="-74"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="HDL-Ge-4B4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5Z8-Bh-ULR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item 1" id="99K-F5-pBM"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6mH-DY-Ul4">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="X8o-1p-tQu" kind="relationship" relationship="rootViewController" id="9bR-GG-BH2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WYt-fD-WNA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="967" y="-427"/>
         </scene>
     </scenes>
 </document>

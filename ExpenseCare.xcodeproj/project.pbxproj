@@ -18,6 +18,8 @@
 		F79A80F524954E3600B16EC8 /* ExpenseCareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79A80F424954E3600B16EC8 /* ExpenseCareTests.swift */; };
 		F79A810024955A0300B16EC8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F79A80FF24955A0300B16EC8 /* GoogleService-Info.plist */; };
 		F79A810224955E0100B16EC8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79A810124955E0100B16EC8 /* HomeViewController.swift */; };
+		F79A8104249600E000B16EC8 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79A8103249600E000B16EC8 /* WalletViewController.swift */; };
+		F79A8106249605BB00B16EC8 /* ExpenseHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79A8105249605BB00B16EC8 /* ExpenseHomeViewController.swift */; };
 		FDF562BF85D10D0671FA2773 /* Pods_ExpenseCareTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CBC14712F2B2546698D50DB /* Pods_ExpenseCareTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +54,8 @@
 		F79A80F624954E3600B16EC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F79A80FF24955A0300B16EC8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F79A810124955E0100B16EC8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F79A8103249600E000B16EC8 /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
+		F79A8105249605BB00B16EC8 /* ExpenseHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseHomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,8 @@
 				F79A80DE24954E3300B16EC8 /* ViewController.swift */,
 				F79A80E024954E3300B16EC8 /* Main.storyboard */,
 				F79A810124955E0100B16EC8 /* HomeViewController.swift */,
+				F79A8105249605BB00B16EC8 /* ExpenseHomeViewController.swift */,
+				F79A8103249600E000B16EC8 /* WalletViewController.swift */,
 				F79A80E624954E3600B16EC8 /* Assets.xcassets */,
 				F79A80E824954E3600B16EC8 /* LaunchScreen.storyboard */,
 				F79A80EB24954E3600B16EC8 /* Info.plist */,
@@ -332,6 +338,8 @@
 				F79A80DB24954E3300B16EC8 /* AppDelegate.swift in Sources */,
 				F79A80DD24954E3300B16EC8 /* SceneDelegate.swift in Sources */,
 				F79A80E524954E3300B16EC8 /* ExpenseCare.xcdatamodeld in Sources */,
+				F79A8106249605BB00B16EC8 /* ExpenseHomeViewController.swift in Sources */,
+				F79A8104249600E000B16EC8 /* WalletViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
